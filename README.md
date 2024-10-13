@@ -1,9 +1,10 @@
 按照cosyvoice官方文档搭建环境(https://github.com/FunAudioLLM/CosyVoice.git):
 
 安装
-
 Clone the repo
+
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
+
 # 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功
 cd CosyVoice
 git submodule update --init --recursive
