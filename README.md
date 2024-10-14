@@ -1,6 +1,6 @@
-## 安装
+# 安装
 
-**按照官方文档搭建环境**
+## 按照官方文档搭建环境
 
 - 克隆代码库
 ``` sh
@@ -25,21 +25,24 @@ conda install -y -c conda-forge pynini==2.1.5
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
 ```
 
-# 解决 sox 兼容性问题
+## 解决 sox 兼容性问题
+``` sh
 # ubuntu
 sudo apt-get install sox libsox-dev
 # centos
 sudo yum install sox sox-devel
 ```
 
-**Model download**
+## 下载预训练模型
+强烈建议下载以下预训练模型和资源：
+- CosyVoice-300M
+- CosyVoice-300M-SFT
+- CosyVoice-300M-Instruct
+- CosyVoice-ttsfrd
+如果您是该领域的专家，并且只对从头开始训练自己的 CosyVoice 模型感兴趣，则可以跳过此步骤。
 
-We strongly recommend that you download our pretrained `CosyVoice-300M` `CosyVoice-300M-SFT` `CosyVoice-300M-Instruct` model and `CosyVoice-ttsfrd` resource.
-
-If you are expert in this field, and you are only interested in training your own CosyVoice model from scratch, you can skip this step.
-
-``` python
-# SDK模型下载
+***SDK模型下载***
+``` sh
 from modelscope import snapshot_download
 snapshot_download('iic/CosyVoice-300M', local_dir='pretrained_models/CosyVoice-300M')
 snapshot_download('iic/CosyVoice-300M-25Hz', local_dir='pretrained_models/CosyVoice-300M-25Hz')
@@ -48,8 +51,8 @@ snapshot_download('iic/CosyVoice-300M-Instruct', local_dir='pretrained_models/Co
 snapshot_download('iic/CosyVoice-ttsfrd', local_dir='pretrained_models/CosyVoice-ttsfrd')
 ```
 
+***git模型下载，请确保已安装git lfs***
 ``` sh
-# git模型下载，请确保已安装git lfs
 mkdir -p pretrained_models
 git clone https://www.modelscope.cn/iic/CosyVoice-300M.git pretrained_models/CosyVoice-300M
 git clone https://www.modelscope.cn/iic/CosyVoice-300M-25Hz.git pretrained_models/CosyVoice-300M-25Hz
@@ -58,9 +61,8 @@ git clone https://www.modelscope.cn/iic/CosyVoice-300M-Instruct.git pretrained_m
 git clone https://www.modelscope.cn/iic/CosyVoice-ttsfrd.git pretrained_models/CosyVoice-ttsfrd
 ```
 
-Optionaly, you can unzip `ttsfrd` resouce and install `ttsfrd` package for better text normalization performance.
-
-Notice that this step is not necessary. If you do not install `ttsfrd` package, we will use WeTextProcessing by default.
+## 额外步骤（可选）
+您可以解压缩 ttsfrd 资源并安装 ttsfrd 包以获得更好的文本规范化性能。请注意，这一步不是必需的
 
 ``` sh
 cd pretrained_models/CosyVoice-ttsfrd/
