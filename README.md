@@ -6,7 +6,9 @@
 - 克隆代码库
 ``` sh
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
-# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功。
+```
+如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功。
+``` sh
 cd CosyVoice
 git submodule update --init --recursive
 ```
