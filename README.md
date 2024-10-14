@@ -1,6 +1,7 @@
 # 安装
 
-## 按照官方文档（https://github.com/FunAudioLLM/CosyVoice.git）搭建环境
+## 按照官方文档搭建环境
+官方文档（https://github.com/FunAudioLLM/CosyVoice.git）
 
 - 克隆代码库
 ``` sh
