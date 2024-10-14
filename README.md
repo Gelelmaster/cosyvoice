@@ -23,8 +23,15 @@ git submodule update --init --recursive
   D:\Program Files\Miniconda3\Library\bin  
   D:\Program Files\Miniconda3\Scripts  
   
-  
-  
+  打开 系统属性 > 高级系统设置 > 环境变量，可以设置存储 conda 环境的路径和 conda 包的路径。
+
+  变量名：CONDA_ENVS_PATH
+  变量值：conda 环境的路径，例如 C:\path\to\envs
+
+  变量名：CONDA_PKGS_DIRS
+  变量值：conda 包的路径，例如 D:\AnacondaPackages
+
+    
 - 创建虚拟环境
 ``` sh
 conda create -n cosyvoice python=3.8
