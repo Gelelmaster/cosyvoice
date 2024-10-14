@@ -14,6 +14,7 @@ git submodule update --init --recursive
 ```
 
 - 安装 MiniConda: https://docs.conda.io/en/latest/miniconda.html
+系统环境变量Path添加miniconda下的三个路径:\mini_conda; \mini_conda\Library\bin; \mini_conda\Scripts。
 
 - 创建虚拟环境
 ``` sh
