@@ -10,8 +10,8 @@ cd CosyVoice
 git submodule update --init --recursive
 ```
 
-- Install Conda: please see https://docs.conda.io/en/latest/miniconda.html
-- Create Conda env:
+- 2. 安装 Conda: please see https://docs.conda.io/en/latest/miniconda.html
+- 创建虚拟环境:
 
 ``` sh
 conda create -n cosyvoice python=3.8
