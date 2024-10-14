@@ -13,13 +13,15 @@ cd CosyVoice
 git submodule update --init --recursive
 ```
 
-- 安装 MiniConda  
+- 安装 MiniConda
+    
 下载：https://docs.conda.io/en/latest/miniconda.html   
+  
 系统环境变量Path添加miniconda下的三个路径:
     
-D:\Program Files\Miniconda3  
-D:\Program Files\Miniconda3\Library\bin  
-D:\Program Files\Miniconda3\Scripts  
+ D:\Program Files\Miniconda3  
+ D:\Program Files\Miniconda3\Library\bin  
+ D:\Program Files\Miniconda3\Scripts  
   
   
   
