@@ -5,19 +5,25 @@
 - 克隆代码库
 ``` sh
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
-# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功：
+# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功
 cd CosyVoice
 git submodule update --init --recursive
 ```
 
 - 安装 Conda: https://docs.conda.io/en/latest/miniconda.html
-- 创建虚拟环境:
+
+- 创建虚拟环境
 ``` sh
 conda create -n cosyvoice python=3.8
 conda activate cosyvoice
-# pynini is required by WeTextProcessing, use conda to install it as it can be executed on all platform.
+```
+
+- 安装依赖
+# pynini 是 WeTextProcessing 所必需的，使用 conda 安装
+``` sh
 conda install -y -c conda-forge pynini==2.1.5
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
+```
 
 # If you encounter sox compatibility issues
 # ubuntu
