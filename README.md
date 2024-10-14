@@ -59,6 +59,7 @@ sudo yum install sox sox-devel
 - CosyVoice-300M-SFT
 - CosyVoice-300M-Instruct
 - CosyVoice-ttsfrd
+   
 如果您是该领域的专家，并且只对从头开始训练自己的 CosyVoice 模型感兴趣，则可以跳过此步骤。
 
 ***SDK模型下载***
