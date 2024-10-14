@@ -20,6 +20,7 @@ git submodule update --init --recursive
 - D:\Program Files\Miniconda3\Library\bin
 - D:\Program Files\Miniconda3\Scripts。
 
+
 - 创建虚拟环境
 ``` sh
 conda create -n cosyvoice python=3.8
