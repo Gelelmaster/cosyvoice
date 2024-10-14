@@ -2,7 +2,7 @@
 
 **按照官方文档搭建环境**
 
-- 1. 克隆代码库
+- 克隆代码库
 ``` sh
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
 # 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功：
@@ -10,7 +10,7 @@ cd CosyVoice
 git submodule update --init --recursive
 ```
 
-- 2. 安装 Conda: please see https://docs.conda.io/en/latest/miniconda.html
+- 安装 Conda: please see https://docs.conda.io/en/latest/miniconda.html
 - 创建虚拟环境:
 
 ``` sh
