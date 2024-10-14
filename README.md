@@ -19,13 +19,13 @@ conda activate cosyvoice
 ```
 
 - 安装依赖
-# pynini 是 WeTextProcessing 所必需的，使用 conda 安装
+pynini 是 WeTextProcessing 所必需的，使用 conda 安装
 ``` sh
 conda install -y -c conda-forge pynini==2.1.5
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
 ```
 
-# If you encounter sox compatibility issues
+# 解决 sox 兼容性问题
 # ubuntu
 sudo apt-get install sox libsox-dev
 # centos
