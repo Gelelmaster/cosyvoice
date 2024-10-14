@@ -1,28 +1,40 @@
-按照cosyvoice官方文档搭建环境(https://github.com/FunAudioLLM/CosyVoice.git):
+# CosyVoice 环境搭建指南
 
-安装
-Clone the repo
+按照官方文档搭建环境：[CosyVoice GitHub](https://github.com/FunAudioLLM/CosyVoice.git)
 
+## 安装步骤
+
+### 1. 克隆代码库
+
+```bash
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
 
-# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功
+如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功：
 
+```bash
 cd CosyVoice
-
 git submodule update --init --recursive
 
-安装 Conda: please see https://docs.conda.io/en/latest/miniconda.html
+### 2. 安装 Conda
 
-创建 Conda env:
+请参考 Miniconda 安装文档。
 
+https://docs.conda.io/en/latest/miniconda.html
+
+### 3. 创建 Conda 环境
+
+```bash
 conda create -n cosyvoice python=3.8
-
 conda activate cosyvoice
 
-# pynini 是 WeTextProcessing 所必需的，使用 conda 来安装它，因为它可以在所有平台上执行
+### 4. 安装依赖
 
+# pynini 是 WeTextProcessing 所必需的，使用 conda 安装：
+```bash
 conda install -y -c conda-forge pynini==2.1.5
 
+安装其他依赖：
+```bash
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
 
 # 如果遇到 sox 兼容性问题
