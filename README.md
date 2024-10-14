@@ -5,7 +5,7 @@
 - 克隆代码库
 ``` sh
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
-# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功
+# 如果由于网络故障导致克隆子模块失败，请运行以下命令直至成功。
 cd CosyVoice
 git submodule update --init --recursive
 ```
@@ -19,7 +19,7 @@ conda activate cosyvoice
 ```
 
 - 安装依赖
-pynini 是 WeTextProcessing 所必需的，使用 conda 安装
+pynini 是 WeTextProcessing 所必需的，使用 conda 安装。
 ``` sh
 conda install -y -c conda-forge pynini==2.1.5
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
@@ -62,7 +62,7 @@ git clone https://www.modelscope.cn/iic/CosyVoice-ttsfrd.git pretrained_models/C
 ```
 
 ## 额外步骤（可选）
-您可以解压缩 ttsfrd 资源并安装 ttsfrd 包以获得更好的文本规范化性能。请注意，这一步不是必需的
+您可以解压缩 ttsfrd 资源并安装 ttsfrd 包以获得更好的文本规范化性能。请注意，这一步不是必需的。
 
 ``` sh
 cd pretrained_models/CosyVoice-ttsfrd/
