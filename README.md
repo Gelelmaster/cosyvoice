@@ -76,7 +76,7 @@ snapshot_download('iic/CosyVoice-300M-Instruct', local_dir='pretrained_models/Co
 snapshot_download('iic/CosyVoice-ttsfrd', local_dir='pretrained_models/CosyVoice-ttsfrd')
 ```
 
-***git模型下载，请确保已安装git lfs***
+***git下载模型，请确保已安装git lfs***
 ``` sh
 mkdir -p pretrained_models
 git clone https://www.modelscope.cn/iic/CosyVoice-300M.git pretrained_models/CosyVoice-300M
