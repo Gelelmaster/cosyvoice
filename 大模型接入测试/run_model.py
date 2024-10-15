@@ -2,7 +2,7 @@ import os
 import openai
 
 # API Key（确保安全性，建议通过环境变量传入）
-api_key = 'sk-60671a06987c4029b9ae5e31622e27a9'
+api_key = 'sk-XXXX'
 
 def run_model(input_message):
     input_message = str(input_message)
