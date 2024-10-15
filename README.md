@@ -3,6 +3,8 @@
 ## 按照官方文档搭建环境
 官方文档 (https://github.com/FunAudioLLM/CosyVoice)
 
+需要cuda
+
 - 克隆代码库
 ``` sh
 git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git
@@ -42,6 +44,8 @@ conda activate cosyvoice
 pynini 是 WeTextProcessing 所必需的，使用 conda 安装。
 ``` sh
 conda install -y -c conda-forge pynini==2.1.5
+pip install -r requirements.txt
+# 下载失败就指定下载源  
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
 ```
 
